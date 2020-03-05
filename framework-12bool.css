@@ -1,0 +1,56 @@
+.container {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.container::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.warp-container {
+  margin-top: 100px;
+}
+
+[class^="col-"] {
+
+}
+
+@media all and (min-width: 1200px) {
+  #lezioni , #steps, #why
+}
+
+@media all and (max-width: 768px) {
+    .left-xs, .right-xs, .central-xs{
+  width:100%;
+  float: left;
+}
+}
+
+@media all and (max-width: 992px) and (min-width: 768px) {
+    .left-md, .right-md, .central-md {
+  width:40%;
+  float: left;
+}
+}
+
+@media all and (min-width: 993px) {
+  .left-lg, .right-lg, .central-lg{
+  width:30%;
+  float: left;
+}
+}
+
+.col-1 {
+  width: calc( 100% / 12);
+}
+
+.col-2 {
+  width: calc(( 100% / 12) * 2);
+}
+
+.col-3 {
+  width: calc(( 100% / 12) * 4);
+}
